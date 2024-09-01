@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+    
+    <section id="add-book-section">
+        <h2>Add a Book</h2>
+        <form id="add-book-form">
+            <input type="text" id="isbn" placeholder="ISBN" required>
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="year" placeholder="Publication Year" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <section id="borrow-book-section">
+        <h2>Borrow a Book</h2>
+        <form id="borrow-book-form">
+            <input type="text" id="borrow-isbn" placeholder="ISBN" required>
+            <button type="submit">Borrow Book</button>
+        </form>
+    </section>
+
+    <section id="return-book-section">
+        <h2>Return a Book</h2>
+        <form id="return-book-form">
+            <input type="text" id="return-isbn" placeholder="ISBN" required>
+            <button type="submit">Return Book</button>
+        </form>
+    </section>
+
+    <section id="view-books-section">
+        <h2>Available Books</h2>
+        <ul id="book-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
